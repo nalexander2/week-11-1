@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-toe</title>
+    <style>
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .blinking-text {
+            text-align: center;
+            margin-top: 20%;
+            font-size: 24px;
+            color:white;
+            animation: blink 1s infinite; 
+        }
+    </style>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="blinking-text">
+        Lets Play!!
+    </div>
+    <div id="gameContainer">
+        <h1>Tic Tac Toe</h1>
+        <div Id="cellContainer">
+            <div cellIndex="0" class="cell"></div>
+            <div cellIndex="1" class="cell"></div>
+            <div cellIndex="2" class="cell"></div>
+            <div cellIndex="3" class="cell"></div>
+            <div cellIndex="4" class="cell"></div>
+            <div cellIndex="5" class="cell"></div>
+            <div cellIndex="6" class="cell"></div>
+            <div cellIndex="7" class="cell"></div>
+            <div cellIndex="8" class="cell"></div>
+          
+
+        </div>
+        <h2 id ="statusText"></h2>
+        <Button id="restartBtn">Restart Game</Button>
+    </div>
+
+  
+
+    <script src = "node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src = "node_modules/jquery/dist/jquery.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+<!--Using any of the tools you've worked with so far, create a game of Tic-Tac-Toe.
+Create a Tic-Tac-Toe game grid using your HTML element of choice.
+When a cell in the grid is clicked, an X or O should appear in that spot depending on whose turn it is.
+A heading should say whether it is X's or O's turn and change with each move made.
+A button should be available to clear the grid and restart the game.
+When a player has won, or the board is full and the game results in a draw, 
+a Bootstrap alert or similar Bootstrap component should appear across the screen announcing the winner.-->
